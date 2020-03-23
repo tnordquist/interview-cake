@@ -1,0 +1,3 @@
+
+Integer[] boxedArray = IntStream.of(mL).boxed().toArray(Integer[]::new);
+Set<Integer> set = IntStream.of(mL).boxed().collect(Collectors.toSet());
