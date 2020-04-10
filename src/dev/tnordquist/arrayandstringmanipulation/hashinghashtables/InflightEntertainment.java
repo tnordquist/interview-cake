@@ -17,10 +17,10 @@ public class InflightEntertainment {
 
     // determine if two movies add up to the flight length
 
-    for(int j = 0; j < mL.length-1; ++j) {
+    for (int j = 0; j < mL.length - 1; ++j) {
 
-      int test = (fL-mL[j+1]);
-      if(hashset.contains(test)){
+      int test = (fL - mL[j + 1]);
+      if (hashset.contains(test)) {
         return match = true;
 
       }
@@ -29,5 +29,8 @@ public class InflightEntertainment {
     return match;
   }
 
+  public static void main(String[] args) {
+    final boolean result = canTwoMoviesFillFlight(new int[] {2, 4}, 6);
 
+  }
 }
